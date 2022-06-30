@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+.nav-list {
+  width: 70%;
+  /* background-color:black; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.rightNav {
+  width: 30%;
+  /* background-color: bisque; */
+  text-align: right;
+  padding: 5px 10px;
+}
+.logo {
+  width: 20%;
+  text-align: center;
+}
+.logo img {
+  width: 30%;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+.nav-list li a:hover {
+  color: cornsilk;
+}
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+.background {
+  background: rgba(0, 0, 0, 0.7) url("../images/newyork.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 70%;
+  margin: auto;
+  height: 80%;
+}
+
+.firstSection {
+  height: 100vh;
+  margin-bottom: 40px;
+}
+.firstHalf {
+  padding: 5px;
+  max-width: 70%;
+}
+.secondHalf {
+  max-width: 30%;
+}
+.secondHalf img {
+  padding: 5px;
+
+  max-width: 100%;
+}
+.nav-list li {
+  list-style-type: none;
+  margin: 10px;
+  padding: 5px;
+  transition: 0.5s;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-list li:hover {
+  color: orange;
+  /* border: 2px solid orange; */
+  text-decoration: underline orange;
+  border-radius: 5px;
+}
+.btn {
+  margin: 10px;
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 15px;
+  background: transparent;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text-big {
+  font-size: 45px;
+  margin: 25px;
+  transition: 0.8s;
+}
+.text-small {
+  font-size: 20px;
+  transition: 0.8s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.secRight {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+}
+.paras {
+  padding: 0px 65px;
+  max-width: 70%;
+}
+.secleft {
+  height: 500px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 15px;
+}
+.sectionTag {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 45px;
+  padding-top: 15px;
+  margin-top: 10px;
+  transition: 0.8s;
+}
+.sectionSubTag {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  padding-bottom: 70px;
+  transition: 0.8s;
+}
+.thumbnail {
+  max-width: 30%;
+}
+.thumbnail img {
+  width: 100%;
+  border-radius: 20px;
+}
+.contact {
+  background-color: #e7e7e7;
+}
+.text-center {
+  text-align: center;
+  padding: 25px 0px;
+  font-size: 45px;
+}
+.form {
+  max-width: 50%;
+  margin: auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.form input {
+  width: 50%;
+  margin: 18px;
+  font-size: 20px;
+  border: 2px solid grey;
+  border-radius: 6px;
+  padding: 3px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-dark {
+  padding: 5px 13px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  color: green;
+  transition: 0.7s;
+  margin: 25px;
+}
+.btn-dark:hover {
+  background-color: green;
+  color: white;
+}
+#concern {
+  width: 50%;
+  font-size: 20px;
+}
+.text-footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma;
+}
+.burger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+  display: none;
+}
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1530px) {
+  .nav-list {
+    flex-direction: column;
+  }
+  .navbar {
+    flex-direction: column;
+    transition: all 0.5s ease-out;
+  }
+  .rightNav {
+    text-align: center;
+  }
+  #search {
+    width: 100%;
+  }
+  .burger {
+    display: block;
+  }
+  .h-nav {
+    height: 58px;
+  }
+  .v-class {
+    opacity: 0;
+  }
+  .text-big {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+  .text-small {
+    font-size: 18px;
+  }
+  .sectionTag {
+    font-size: 35px;
+  }
+  .sectionSubTag {
+    font-size: 18px;
+  }
+  .secRight {
+    max-width: 90%;
+  }
+  .paras {
+    max-width: 70%;
+  }
+  .thumbnail {
+    max-width: 30%;
+  }
+  .thumbnail img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .secRight {
+    max-width: 98%;
+  }
+  .secleft {
+    max-width: 98%;
+  }
+  .paras {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .secRight {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .secleft {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .paras {
+    max-width: 90%;
+  }
+  .sectionTag {
+    font-size: 35px;
+  }
+  .sectionSubTag {
+    font-size: 18px;
+  }
+  .thumbnail {
+    max-width: 35%;
+  }
+  .thumbnail img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .sectionTag {
+    font-size: 26px;
+  }
+  .sectionSubTag {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .box-main {
+    max-width: 85%;
+  }
+  .thumbnail {
+    max-width: 50%;
+    margin-bottom: 15px;
+  }
+  .secRight {
+    height: 108vh;
+  }
+  .text-center {
+    font-size: 32px;
+  }
+  .form {
+    max-width: 80%;
+  }
+  .form input {
+    width: 85%;
+    margin: 12px;
+  }
+  .text-footer {
+    font-size: 12px;
+  }
+  .box-main {
+    flex-direction: column-reverse;
+  }
+  .secondHalf {
+    max-width: 60%;
+  }
+  .firstHalf {
+    max-width: 100%;
+  }
+  .text-small {
+    font-size: 21px;
+  }
+  .buttons {
+    margin: 15px;
+    padding: 5px 15p;
+  }
+}
+
+
+
+@media only screen and (max-width: 450px){
+  .firstSection{
+    height: 85vh;
+    margin-bottom: 0px;
+  }
+  .box-main{
+    height: 100%;
+  }
+  .secRight{
+    height: 125vh;
+  }
+  .paras{
+    padding: 0px;
+  }
+  .text-big{
+    font-size: 28px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .text-small{
+    font-size: 19px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .text-center{
+    font-size: 28px;
+  }
+  .form input{
+    font-size: 16px;
+  }
+  #concern{
+    font: size 16px; ;
+  }
+  .btn-dark{
+    font-size: 16px;
+  }
+
+}
+
+
